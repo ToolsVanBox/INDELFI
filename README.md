@@ -7,8 +7,8 @@ This script filters low quiality INDEL calls from VCF files.
 
 The followig packages need to be installed under GUIX.
 
-bedtools
-vcftools
+* bedtools
+* vcftools
 
 
 
@@ -22,12 +22,12 @@ This is a stand-alone perl script.  Except for the dependencies, no installation
 	perl INDELFI.pl -i [input VCF] -s [column test sample] -c [column control sample]
 
 
-##Required parameters:
+## Required parameters:
     -i | input VCF (including the PATH)
     -s | column number, which contains the genotype field of the TEST sample in the VCF (0-based)
     -c | column number, which contains the genotype field of the CONTROL sample in the VCF (0-based)
 
-##Optional parameters:
+## Optional parameters:
     -q | minimal GATK quality score for filtering (Default: 250)
     -RD | minimal read depth at a variant position in both TEST and CONTROL sample to pass the filter (Default: 20)
     -VAF | minimal variant allele frequency in the TEST sample for a variant to pass the filter (Default: 0.1)
