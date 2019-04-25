@@ -42,4 +42,6 @@ This is a stand-alone perl script.  Except for the dependencies, no installation
 
 # Output
 
-VCF file containing INDELS that passed the specified quality filters.  
+VCF file containing INDELS that passed the specified quality filters. 
+
+
